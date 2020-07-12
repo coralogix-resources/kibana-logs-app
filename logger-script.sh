@@ -10,7 +10,9 @@ message_02="logging into application 02"
 
 while true; do
   echo "$timestamp - $loglevel_01 - $host - app-01 - $i - $message_01" >> /var/log/my-app-01.log; 
+
   echo "$timestamp - $loglevel_02 - $host - app-02 - $i - $message_02" >> /var/log/my-app-02.log; 
+  
   i=$((i+1)); 
   sleep 1;
 done
